@@ -1,0 +1,28 @@
+{
+    "name": "bastinald/laravel-bootstrap-forms",
+    "homepage": "https://github.com/bastinald/laravel-bootstrap-forms",
+    "description": "Bootstrap 5 form components for Laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Dion",
+            "email": "bastinald@icloud.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bastinald\\Forms\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bastinald\\Forms\\Providers\\FormsProvider"
+            ]
+        }
+    }
+}
