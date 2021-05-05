@@ -33,13 +33,21 @@
 
     <div class="input-group">
         @isset($prepend)
-            <span class="input-group-text">{!! $prepend !!}</span>
+            @if(Str::contains($prepend, 'btn'))
+                {!! $prepend !!}
+            @else
+                <span class="input-group-text">{!! $prepend !!}</span>
+            @endif
         @endisset
 
         <input {{ $attributes }}>
 
         @isset($append)
-            <span class="input-group-text rounded-end">{!! $append !!}</span>
+            @if(Str::contains($append, 'btn'))
+                {!! str_replace('btn ', 'btn rounded-end ', $append) !!}
+            @else
+                <span class="input-group-text rounded-end">{!! $append !!}</span>
+            @endif
         @endisset
 
         @error($error)

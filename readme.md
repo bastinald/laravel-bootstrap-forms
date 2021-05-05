@@ -65,17 +65,9 @@ A select dropdown using Eloquent results:
 A select dropdown using an associative array:
 
 ```html
-@php
-$colors = [
-    '#ff0000' => 'Red',
-    '#00ff00' => 'Green',
-    '#0000ff' => 'Blue',
-];
-@endphp
-
 <x-forms::select
     :label="__('Color')"
-    :options="$colors"
+    :options="['#ff0000' => 'Red', '#00ff00' => 'Green']"
     error="color"
     wire:model.defer="color"/>
 ```
@@ -83,13 +75,9 @@ $colors = [
 A select dropdown using an indexed array:
 
 ```html
-@php
-$colors = ['Red', 'Green', 'Blue'];
-@endphp
-
 <x-forms::select
     :label="__('Color')"
-    :options="$colors"
+    :options="['Red', 'Green']"
     error="color"
     wire:model.defer="color"/>
 ```
@@ -99,7 +87,7 @@ A radio group:
 ```html
 <x-forms::radio
     :label="__('Color')"
-    :options="['Red' => '#ff0000', 'Green' => '#00ff00']"
+    :options="['#ff0000' => 'Red', '#00ff00' => 'Green']"
     name="color"
     error="color"
     wire:model.defer="color"/>

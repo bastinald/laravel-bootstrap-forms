@@ -17,7 +17,7 @@
     ]);
 @endphp
 
-@foreach($options as $label => $value)
+@foreach($options as $value => $label)
     <div class="form-check">
         <input {{ $attributes->merge(['id' => $id . '-' . $loop->index, 'value' => $value]) }}>
 
