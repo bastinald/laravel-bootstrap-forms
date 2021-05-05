@@ -64,7 +64,7 @@ A select dropdown using Eloquent results:
 
 A select dropdown using an associative array:
 
-```php
+```html
 @php
 $colors = [
     '#ff0000' => 'Red',
@@ -82,7 +82,7 @@ $colors = [
 
 A select dropdown using an indexed array:
 
-```php
+```html
 @php
 $colors = ['Red', 'Green', 'Blue'];
 @endphp
