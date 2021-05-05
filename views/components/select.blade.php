@@ -27,7 +27,7 @@
             <option value=""></option>
         @endif
 
-        @foreach($options as $label => $value)
+        @foreach($options as $value => $label)
             <option value="{{ $value }}">{{ $label }}</option>
         @endforeach
     </select>

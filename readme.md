@@ -52,14 +52,46 @@ A file upload field:
     wire:model.defer="avatar"/>
 ```
 
-A select dropdown:
+A select dropdown using Eloquent results:
 
 ```html
 <x-forms::select
     :label="__('User ID')"
-    :options="App\Models\User::pluck('id', 'name')->toArray()"
+    :options="App\Models\User::pluck('name', 'id')->toArray()"
     error="user_id"
     wire:model.defer="user_id"/>
+```
+
+A select dropdown using an associative array:
+
+```php
+@php
+$colors = [
+    '#ff0000' => 'Red',
+    '#00ff00' => 'Green',
+    '#0000ff' => 'Blue',
+];
+@endphp
+
+<x-forms::select
+    :label="__('Color')"
+    :options="$colors"
+    error="color"
+    wire:model.defer="color"/>
+```
+
+A select dropdown using an indexed array:
+
+```php
+@php
+$colors = ['Red', 'Green', 'Blue'];
+@endphp
+
+<x-forms::select
+    :label="__('Color')"
+    :options="$colors"
+    error="color"
+    wire:model.defer="color"/>
 ```
 
 A radio group:
