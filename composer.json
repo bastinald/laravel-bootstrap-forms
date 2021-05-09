@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Bastinald\\Forms\\": "src"
+            "Bastinald\\LaravelBootstrapForms\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Bastinald\\Forms\\Providers\\FormsProvider"
+                "Bastinald\\LaravelBootstrapForms\\Providers\\LaravelBootstrapFormsProvider"
             ]
         }
     }

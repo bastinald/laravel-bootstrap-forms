@@ -1,10 +1,10 @@
 <?php
 
-namespace Bastinald\Forms\Providers;
+namespace Bastinald\LaravelBootstrapForms\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class FormsProvider extends ServiceProvider
+class LaravelBootstrapFormsProvider extends ServiceProvider
 {
     public function boot()
     {
