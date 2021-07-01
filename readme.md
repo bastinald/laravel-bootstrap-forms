@@ -2,7 +2,7 @@
 
 Check out my new UI, Auth, & CRUD scaffolding here: https://github.com/bastinald/laravel-livewire-ui
 
---
+---
 
 ## Laravel Bootstrap Forms
 
