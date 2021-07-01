@@ -1,8 +1,10 @@
 # No Longer Maintained
 
-Please check out my latest package here: https://github.com/bastinald/laravel-livewire-forms
+Check out my new UI, Auth, & CRUD scaffolding here: https://github.com/bastinald/laravel-livewire-ui
 
-# Laravel Bootstrap Forms
+--
+
+## Laravel Bootstrap Forms
 
 Bootstrap 5 form components for Laravel.
 
