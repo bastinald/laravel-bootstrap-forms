@@ -1,9 +1,3 @@
-# No Longer Maintained
-
-Check out my UI, Auth, & CRUD scaffolding package here: https://github.com/bastinald/laravel-livewire-ui
-
----
-
 ## Laravel Bootstrap Forms
 
 Bootstrap 5 form components for Laravel.
